@@ -10,14 +10,18 @@
 --------------------------------------------------------------*/
 
 :root {
-  --main-color:#37517e;
-  --main-color-light:#47b2e4;
-  --main-color-light-hover:#6bc1e9;
+  --main-color:red;
+  --main-color-light:#ff6100;
+  --main-color-light-hover:#ff8000;
+  --main-color-banner-bg: #f3f5fa;
+  --main-banner-title:red;
+  --main-banner-subtitle:rgba(255, 0, 0, 0.6);
+  --main-color-dark-font: #444444;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: var(--main-color-dark-font);
 }
 
 a {
@@ -121,10 +125,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  background: var(--main-color);
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  background: rgba(255, 0, 0, 0.6);
 }
 
 #header .logo {
@@ -378,7 +383,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: var(--main-color);
+  background: var(--main-color-banner-bg);
 }
 
 #hero .container {
@@ -390,11 +395,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: var(--main-banner-title);
 }
 
 #hero h2 {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--main-banner-subtitle);
   margin-bottom: 50px;
   font-size: 24px;
 }
@@ -423,13 +428,13 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   transition: 0.5s;
   margin: 10px 0 0 25px;
-  color: #fff;
+  color: var(--main-color-dark-font);
   line-height: 1;
 }
 
 #hero .btn-watch-video i {
   line-height: 0;
-  color: #fff;
+  color: var(--main-color-dark-font);
   font-size: 32px;
   transition: 0.3s;
   margin-right: 8px;
@@ -941,7 +946,7 @@ section {
   font-size: 15px;
   font-weight: 500;
   line-height: 1;
-  color: #444444;
+  color: var(--main-color-dark-font);
   transition: all 0.3s;
   padding: 8px 20px;
   border-radius: 50px;
@@ -1636,7 +1641,7 @@ section {
   background: #fff;
   text-align: center;
   font-size: 15px;
-  color: #444444;
+  color: var(--main-color-dark-font);
 }
 
 #footer .footer-newsletter h4 {
