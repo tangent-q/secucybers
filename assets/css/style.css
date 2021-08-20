@@ -1565,7 +1565,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #209dd8;
+  background: var(--main-color-light-hover);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1695,7 +1695,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #209dd8;
+  background: var(--main-color-light-hover);
 }
 
 #footer .footer-top {
@@ -1788,7 +1788,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #209dd8;
+  background: var(--main-color-light-hover);
   color: #fff;
   text-decoration: none;
 }
