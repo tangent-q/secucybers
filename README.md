@@ -1,8 +1,8 @@
 The https://secucybers.com website.
 
 
-#### Useful Tips
-- [Use Google Sheet/Form for contact form submission](https://blog.milanmaharjan.com.np/post/build-a-custom-contact-form-for-your-static-website/)
+#### Info
+- Form submit is done using https://formsubmit.io/
 
 #### Template
 The website is designed from the below template.
