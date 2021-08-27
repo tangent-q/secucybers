@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: 500;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 #header .logo a {
@@ -415,7 +415,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #fff;
-  background: var(--main-color-light);
+  background: var(--main-color);
 }
 
 #hero .btn-get-started:hover {
@@ -557,6 +557,38 @@ section {
   left: calc(50% - 20px);
 }
 
+.section-title h7 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--main-color);
+}
+
+.section-title h7::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h7::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--main-color-light);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
 .section-title p {
   margin-bottom: 0;
 }
@@ -623,7 +655,7 @@ section {
   margin-bottom: 0;
 }
 
-.about .content .btn-learn-more {
+.btn-learn-more {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -640,7 +672,7 @@ section {
   border: 2px solid var(--main-color-light);
 }
 
-.about .content .btn-learn-more:hover {
+.btn-learn-more:hover {
   background: var(--main-color-light);
   color: #fff;
   text-decoration: none;
