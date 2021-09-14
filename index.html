@@ -817,10 +817,17 @@
             <h4>Join Our Newsletter</h4>
             <p>Get the latest news about social engineering</p>
             <form action="https://formsubmit.io/send/info@secucybers.com" method="post" role="form" class="php-email-form">
-              <input name="_formsubmit_id" type="text" style="display:none">
-              <input type="hidden" name="type" value="subscribe-to-newsletter">
-              <input type="email" name="email">
-              <input type="submit" value="Subscribe">
+              <div class="footer-newsletter-from-bar">
+                <input name="_formsubmit_id" type="text" style="display:none">
+                <input type="hidden" name="type" value="subscribe-to-newsletter">
+                <input type="email" name="email">
+                <input type="submit" value="Subscribe">
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Subscribed. Thank you!</div>
+              </div>
             </form>
           </div>
         </div>
