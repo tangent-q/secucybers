@@ -1003,7 +1003,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   left: 15px;
   bottom: 0;
