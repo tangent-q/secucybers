@@ -1,3 +1,4 @@
+const cors = require('cors')
 const express = require('express')
 require('express-async-errors')
 const logger = require('morgan')
@@ -5,6 +6,8 @@ const logger = require('morgan')
 const index = require('./routes/index')
 
 const app = express()
+
+app.use(cors()) // TODO: Fix This
 
 app.use(logger('dev'))
 app.use(express.json())
